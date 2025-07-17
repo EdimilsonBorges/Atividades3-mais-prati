@@ -5,6 +5,14 @@ index.html:
 <main> e <footer>.
 - Para cada uma dessas seções, aplique margin, padding e border de forma a
 evidenciar seus contornos.
+
+5. Seletores e Propriedades - No mesmo styles.css, adicione:
+- Um estilo para todas as tags <h2> que aumente a font-size e aplique textdecoration:
+underline.
+- Uma classe .destaque que deixe o texto em itálico (font-style: italic) e aplique
+um leve background-color.
+- Um ID #importante que adicione border-top mais espessa em um parágrafo
+específico.
 */
 
  header,
@@ -22,11 +30,25 @@ evidenciar seus contornos.
  }
 
  main {
-   background-color: #f9f9f9;
+   background-color: white;
    color: #000;
  }
 
  footer {
    background-color: #4CAF50;
    color: white;
+ }
+
+ h2 {
+   font-size: 2rem;
+   text-decoration: underline;
+ }
+
+ .destaque{
+  font-style: italic;
+  background-color: #ececec;
+ }
+
+ #importante{
+  border-top: 3px solid #000;
  }
