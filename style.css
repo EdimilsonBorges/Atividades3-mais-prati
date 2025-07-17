@@ -1,0 +1,32 @@
+ /*
+ 4. CSS Básico e Box Model - Crie um arquivo styles.css e vincule-o em
+index.html:
+- Defina cores de fundo (background-color) e de texto (color) para <header>,
+<main> e <footer>.
+- Para cada uma dessas seções, aplique margin, padding e border de forma a
+evidenciar seus contornos.
+*/
+
+ header,
+ main,
+ footer {
+   margin: 10px;
+   padding: 10px;
+   border: 1px solid #000;
+ }
+
+ header {
+   background-color: #4CAF50;
+   color: white;
+
+ }
+
+ main {
+   background-color: #f9f9f9;
+   color: #000;
+ }
+
+ footer {
+   background-color: #4CAF50;
+   color: white;
+ }
