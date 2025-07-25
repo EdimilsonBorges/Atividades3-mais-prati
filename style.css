@@ -15,6 +15,12 @@ um leve background-color.
 específico.
 */
 
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
  header,
  main,
  footer {
@@ -44,11 +50,86 @@ específico.
    text-decoration: underline;
  }
 
- .destaque{
-  font-style: italic;
-  background-color: #ececec;
+ .destaque {
+   font-style: italic;
+   background-color: #ececec;
  }
 
- #importante{
-  border-top: 3px solid #000;
+ #importante {
+   border-top: 3px solid #000;
+ }
+
+
+ /* Estilo galeria */
+
+.galeria {
+  background: linear-gradient(to bottom right, #0d1117, #1f1f2e);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.galeria h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #f0f0f0;
+  text-shadow: 0 0 15px rgba(55, 255, 0, 1);
+}
+
+.image-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.image-list figure {
+  background: #1a1a2e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(38, 38, 38, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.image-list figure:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(55, 255, 0, 0.6);
+}
+
+.image-list figure img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.image-list figure:hover img {
+  transform: scale(1.1);
+}
+
+.image-list figure figcaption {
+  text-align: center;
+  padding: 0.8rem 1rem;
+  font-size: 1.1rem;
+  color: #c0ffc2;
+  background: #0d1117;
+  border-top: 1px solid #333;
+}
+ @media screen and (max-width: 900px) {
+   .image-list {
+     grid-template-columns: repeat(2, 1fr);
+   }
+ }
+
+ @media screen and (max-width: 600px) {
+   .image-list {
+     grid-template-columns: repeat(1, 1fr);
+   }
+   .galeria h1 {
+     font-size: 25px;
+   }
  }
