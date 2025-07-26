@@ -13,52 +13,78 @@ usando <a href="URL_DO_SITE">Nome do Site</a>. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <main>
-        <section>
-            <h2>Meus Hobbies</h2>
+    <header>
+        <div class="toggle" id="toggle">&#9776;</div>
+        <nav>
             <ul>
-                <li>Programar</li>
-                <li>Viajar</li>
-                <li>Ler</li>
-                <li>Estudar</li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
             </ul>
-        </section>
-        <section>
-            <h2>Receita: Bolinho de chuva</h2>
-            <h3>Ingredientes:</h3>
-            <ul>
-                <li>1 banana pequena e madura</li>
-                <li>200 ml de leite de coco</li>
-                <li>2 ovos</li>
-                <li>1 xícara de chá de farinha de aveia</li>
-                <li>1 xícara de chá de mix de farinha sem glúten (ou farinha de arroz)</li>
-                <li>4 colheres de sopa de açúcar</li>
-                <li>1 colher de café de canela em pó</li>
-                <li>1 colher de chá de fermento químico em pó (fermento para bolo)</li>
-                <li>1 colher de sopa de açúcar (para untar)</li>
-                <li>Canela em pó a gosto (para untar)</li>
+            <ul class="menu-togger">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
             </ul>
-            <h3>Passo a passo:</h3>
-            <ol>
-                <li>Amasse bem a banana em uma tigela.</li>
-                <li>Adicione os demais ingredientes (exceto o fermento) à banana amassada e misture até incorporar.</li>
-                <li>Acrescente o fermento em pó à massa e misture suavemente.</li>
-                <li>Prepare formas de cupcake untando-as e polvilhando uma mistura de açúcar e canela.</li>
-                <li>Distribua um pouco da massa em cada forma, coloque uma rodela de banana sobre a massa e cubra com o
-                    restante da massa.</li>
-                <li>Polvilhe a superfície dos bolinhos com a mistura de açúcar e canela.</li>
-                <li>Asse em forno preaquecido a 200°C por 20 a 25 minutos, ou até que estejam dourados.</li>
-            </ol>
-        </section>
+        </nav>
+    </header>
+    <main class="listas">
+        <div>
+            <section>
+                <h2>Meus Hobbies</h2>
+                <ul>
+                    <li>Programar</li>
+                    <li>Viajar</li>
+                    <li>Ler</li>
+                    <li>Estudar</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Receita: Bolinho de chuva</h2>
+                <h3>Ingredientes:</h3>
+                <ul>
+                    <li>1 banana pequena e madura</li>
+                    <li>200 ml de leite de coco</li>
+                    <li>2 ovos</li>
+                    <li>1 xícara de chá de farinha de aveia</li>
+                    <li>1 xícara de chá de mix de farinha sem glúten (ou farinha de arroz)</li>
+                    <li>4 colheres de sopa de açúcar</li>
+                    <li>1 colher de café de canela em pó</li>
+                    <li>1 colher de chá de fermento químico em pó (fermento para bolo)</li>
+                    <li>1 colher de sopa de açúcar (para untar)</li>
+                    <li>Canela em pó a gosto (para untar)</li>
+                </ul>
+                <h3>Passo a passo:</h3>
+                <ol>
+                    <li>Amasse bem a banana em uma tigela.</li>
+                    <li>Adicione os demais ingredientes (exceto o fermento) à banana amassada e misture até incorporar.
+                    </li>
+                    <li>Acrescente o fermento em pó à massa e misture suavemente.</li>
+                    <li>Prepare formas de cupcake untando-as e polvilhando uma mistura de açúcar e canela.</li>
+                    <li>Distribua um pouco da massa em cada forma, coloque uma rodela de banana sobre a massa e cubra
+                        com o
+                        restante da massa.</li>
+                    <li>Polvilhe a superfície dos bolinhos com a mistura de açúcar e canela.</li>
+                    <li>Asse em forno preaquecido a 200°C por 20 a 25 minutos, ou até que estejam dourados.</li>
+                </ol>
+            </section>
+        </div>
+        <nav class="links">
+            <a href="https://www.maisprati.com.br/" target="_blank">+PRATI</a>
+            <a href="https://portal.pucrs.br/" target="_blank">PUCRS</a>
+            <a href="https://www.youtube.com/" target="_blank">YOUTUBE</a>
+        </nav>
     </main>
-    <nav>
-        <a href="https://www.maisprati.com.br/" target="_blank">+PRATI</a>
-        <a href="https://portal.pucrs.br/" target="_blank">PUCRS</a>
-        <a href="https://www.youtube.com/" target="_blank">YOUTUBE</a>
-    </nav>
+    <footer>
+        <p>© 2025 Edimilson Borges. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

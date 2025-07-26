@@ -26,25 +26,35 @@ específico.
  footer {
    margin: 10px;
    padding: 10px;
-   border: 1px solid #fff;
+   border: 1px solid #5e5d5d;
  }
 
  header {
-   background-color: #4CAF50;
-   color: white;
+   background: linear-gradient(to bottom right, #0d1117, #1f1f2e);
    text-align: center;
  }
 
  main {
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   align-items: center;
    padding: 20px;
    width: auto;
-   height: calc(100vh - 160px);
-   background-color: #222c3c;
+   min-height: calc(100vh - 140px);
+ }
+
+ main h1,
+ main>p {
+   color: #f0f0f0;
+   text-shadow: 0 0 15px rgba(55, 255, 0, 1);
  }
 
  footer {
-   background-color: #4CAF50;
-   color: white;
+   position: relative;
+   color: #f0f0f0;
+   text-shadow: 0 0 15px rgba(55, 255, 0, 1);
+   text-align: center;
  }
 
  h2 {
@@ -63,28 +73,22 @@ específico.
 
  body {
    font-family: Arial, sans-serif;
-   background-color: #222c3c;
+   background: linear-gradient(to bottom right, #0d1117, #1f1f2e);
    height: 100%;
  }
 
- main div {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  justify-content: center;
+ main>div {
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
+   justify-content: center;
    padding: 50px;
    max-width: 800px;
-   margin: auto;
    width: 100%;
    background-color: #fff;
    max-width: 800px;
- }
-
- footer {
-   position: relative;
-   background-color: #4CAF50;
-   color: white;
-   text-align: center;
+   margin-top: 30px;
+   border-radius: 5px;
  }
 
 
@@ -168,10 +172,8 @@ específico.
 
  .container-feedback {
    font-family: Arial, sans-serif;
-   background: linear-gradient(to bottom right, #0d1117, #1f1f2e);
    display: flex;
    flex-direction: column;
-   justify-content: center;
    align-items: center;
    height: 100vh;
  }
@@ -234,4 +236,82 @@ específico.
 
  input[type="submit"]:hover {
    background-color: #262643;
+ }
+
+ /* Estilização do menu */
+ nav ul {
+   list-style: none;
+   display: flex;
+   gap: 15px;
+   align-items: center;
+   justify-content: center;
+   padding: 10px;
+   font-size: 16px;
+ }
+
+ nav a {
+   color: white;
+   text-decoration: none;
+ }
+
+ .toggle {
+   color: #f0f0f0;
+   font-size: 30px;
+   display: none;
+   margin-right: 50px;
+   cursor: pointer;
+ }
+
+ .menu-togger {
+   position: absolute;
+   right: 20px;
+   flex-direction: column;
+   text-align: start;
+   background-color: #0D1117;
+   border-radius: 10px;
+   padding: 20px;
+   margin-top: 5px;
+   display: none;
+ }
+
+ .menu-togger li {
+   margin: 15px;
+ }
+
+ .show {
+   display: block !important;
+ }
+
+ @media screen and (max-width: 600px) {
+   .toggle {
+     display: block;
+   }
+
+   nav>ul:not(.menu-togger) {
+     display: none;
+   }
+
+   header {
+     text-align: end;
+   }
+ }
+
+ /* Estilização listas */
+ .listas{
+  color: #050505;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+  .listas > div{
+  width: 80%;
+ }
+
+ .links{
+  display: flex;
+  gap: 50px;
+  padding: 30px;
+ }
+ a:hover{
+  text-shadow: 0 0 15px rgba(55, 255, 0, 1);
  }
