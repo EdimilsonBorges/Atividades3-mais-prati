@@ -80,7 +80,7 @@ Foi aplicado estilo em:
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/projeto-lista-exercicios-3.git 
+git clone https://github.com/EdimilsonBorges/Atividades3-mais-prati.git 
 ```
 
 2. Abra os arquivos index.html, listas.html, galeria.html ou feedback.html no seu navegador.
